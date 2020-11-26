@@ -14,7 +14,9 @@ class UnitTests(unittest.TestCase):
         actual = hat.draw(2)
         expected = ['blue', 'red']
         self.assertEqual(actual, expected, 'Expected hat draw to return two random items from hat contents.')
+        
         actual = len(hat.contents)
+        print(actual)
         expected = 5
         self.assertEqual(actual, expected, 'Expected hat draw to reduce number of items in contents.')
 
